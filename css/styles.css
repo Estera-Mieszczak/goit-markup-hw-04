@@ -8,6 +8,7 @@ body {
 }
 :root {
   --Dark: #2e2f42;
+  --Dark-Translucent: #2e2f42cc;
   --Primary-Brand: #4d5ae5;
   --Pressed-state: #404bbf;
   --Success: #31d0aa;
@@ -125,11 +126,13 @@ p {
   color: var(--White-background);
   background-color: var(--Pressed-state);
   border: 1px solid transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .filter-button:focus {
   color: var(--White-background);
   background-color: var(--Pressed-state);
   border: 1px solid transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .button {
   color: var(--White-background);
@@ -168,9 +171,14 @@ p {
   max-width: 264px;
 }
 .main-banner {
-  background-color: var(--Dark);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      var(--Dark-Translucent),
+      var(--Dark-Translucent)
+    ),
+    url(../images/main-banner.jpg);
+  background-size: cover;
 }
 .main-banner-content {
   display: block;
@@ -211,6 +219,7 @@ p {
 .text {
   font-size: 16px;
   text-align: center;
+  margin-bottom: 8px;
 }
 .our-approach {
   padding-top: 120px;
@@ -222,6 +231,10 @@ p {
 }
 .our-approach-content {
   flex-basis: calc((100% - 72px) / 4);
+}
+.our-approach-icons{
+  background-color: var(--Light);
+  border-radius: 4px;
 }
 .our-projects {
   background: var(--White-background);
@@ -267,9 +280,31 @@ p {
   background-color: var(--White-background);
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .teammate-name {
   padding: 32px 0px;
+}
+.teammate-social {
+  display: flex;
+  justify-content: space-around;
+}
+.teammate-social-icons {
+  background-color: var(--Primary-Brand);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 12px;
+}
+.teammate-social-icons:hover {
+  background-color: var(--Pressed-state);
+}
+.teammate-social-links > svg {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 .container {
   max-width: 1158px;
@@ -283,6 +318,7 @@ p {
 }
 .header-menu-contact-box {
   display: flex;
+  align-items: center;
 }
 .header {
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
@@ -315,6 +351,11 @@ p {
   background: var(--WHITE, #fff);
   margin: 0px;
 }
+.project-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .project-card-img {
   display: block;
   max-width: 100%;
@@ -323,4 +364,26 @@ p {
 .footer-content-logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+.our-customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.our-customers-logo {
+  border-radius: 4px;
+  border: 1px solid var(--Subtle-Text);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-right: 24px;
+}
+.our-customers-list {
+  display: flex;
+}
+.our-customers-box {
+
+}
+.our-customers-logo:hover {
+  color: var(--Pressed-state);
 }
