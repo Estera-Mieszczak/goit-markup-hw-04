@@ -310,9 +310,6 @@ p {
 .teammate-social-links:focus {
   background-color: var(--Pressed-state);
 }
-.teammate-social-links:active {
-  background-color: var(--Pressed-state);
-}
 .teammate-social-links {
   width: 100%;
   height: 100%;
@@ -384,10 +381,6 @@ p {
   max-width: 100%;
   height: auto;
 }
-.footer-content-logo {
-  display: inline-block;
-  margin-bottom: 16px;
-}
 .our-customers {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -445,6 +438,10 @@ p {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
+.footer-content-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-content-social-list {
   display: flex;
   gap: 16px;
@@ -452,4 +449,7 @@ p {
   .footer-content-social-list-element {
     width: 40px;
     height: 40px;
+  }
+  .footer-content-box-logo {
+    gap: 120px;
   }
