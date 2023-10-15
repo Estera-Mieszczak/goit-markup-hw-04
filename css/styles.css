@@ -221,10 +221,32 @@ p {
   margin-bottom: 8px;
   text-align: center;
 }
+.our-approach-text-head {
+  color: var(--Dark);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
 .text {
   font-size: 16px;
   text-align: center;
   margin-bottom: 8px;
+}
+.project-card-text {
+  font-size: 16px;
+}
+.project-card-head {
+  color: var(--Dark);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+.our-approach-text {
+  font-size: 16px;
 }
 .our-approach {
   padding-top: 120px;
